@@ -1,3 +1,24 @@
+:root {
+  --grass: #78c850;
+  --fire: #f08030;
+  --water: #6890f0;
+  --bug: #a8b820;
+  --normal: #a8a878;
+  --poison: #a040a0;
+  --electric: #f8d030;
+  --ground: #e0c068;
+  --fairy: #f4bdc9;
+  --fighting: #c03028;
+  --psychic: #f85888;
+  --rock: #b8a038;
+  --ghost: #705898;
+  --ice: #98d8d8;
+  --dragon: #7038f8;
+  --dark: #705848;
+  --steel: #b8b8d0;
+  --flying: #a890f0;
+}
+
 .container__pokemon {
   display: flex;
   flex-direction: row;
@@ -24,17 +45,32 @@
   transform: translate(-1px, -1px);
 }
 
-.img__pokemon {
+.pokemon__image__wrapper {
   width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img__pokemon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .span__name__pokemon {
   font-size: larger;
   font-weight: bolder;
+  text-align: center;
 }
 
-.loading {
-  display: none;
+.span__id__pokemon {
+  color: #111;
+}
+
+.no-results {
+  margin-top: 20px;
 }
 
 .grass {
@@ -105,4 +141,114 @@
 .dragon {
   background-color: rgba(245, 222, 179, 0.178);
   border: 1px solid wheat;
+}
+
+.flying {
+  background-color: #a890f023;
+  border: 1px solid #a890f0;
+}
+
+.fairy {
+  background-color: rgba(244, 189, 201, 0.35);
+  border: 1px solid #f4bdc9;
+}
+.dark {
+  background-color: rgba(70, 70, 70, 0.35);
+  border: 1px solid #464646;
+}
+.steel {
+  background-color: rgba(184, 184, 208, 0.35);
+  border: 1px solid #b8b8d0;
+}
+.flying {
+  background-color: rgba(168, 144, 240, 0.35);
+  border: 1px solid #a890f0;
+}
+
+.pokemon__types {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.span__type__pokemon {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.type__grass {
+  color: #111;
+  background-color: var(--grass);
+}
+
+.type__fire {
+  color: #111;
+  background-color: var(--fire);
+}
+
+.type__water {
+  background-color: var(--water);
+}
+
+.type__bug {
+  background-color: var(--bug);
+}
+
+.type__normal {
+  background-color: var(--normal);
+}
+
+.type__poison {
+  background-color: var(--poison);
+}
+
+.type__electric {
+  background-color: var(--electric);
+}
+
+.type__ground {
+  background-color: var(--ground);
+}
+
+.type__fairy {
+  background-color: var(--fairy);
+}
+
+.type__fighting {
+  background-color: var(--fighting);
+}
+
+.type__psychic {
+  background-color: var(--psychic);
+}
+
+.type__rock {
+  background-color: var(--rock);
+}
+
+.type__ghost {
+  background-color: var(--ghost);
+}
+
+.type__ice {
+  background-color: var(--ice);
+}
+
+.type__dragon {
+  background-color: var(--dragon);
+}
+
+.type__dark {
+  background-color: var(--dark);
+}
+
+.type__steel {
+  background-color: var(--steel);
+}
+
+.type__flying {
+  background-color: var(--flying);
 }
