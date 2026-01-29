@@ -8,7 +8,7 @@ O projeto consome dados da **PokéAPI** e apresenta os Pokémon em uma interface
 
 ## 🚀 Demonstração
 
-> _(Adicione aqui um GIF do projeto — repositórios com GIF recebem MUITO mais atenção de recrutadores.)_
+![Demonstração da Pokedex](./assets/pokedex.gif)
 
 ---
 
