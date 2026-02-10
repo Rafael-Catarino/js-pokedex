@@ -97,7 +97,7 @@ let arrPokemons = [];
 let isLoading = false;
 const getPokemons = async () => {
   try {
-    const url = `https://pokeapi.co/api/v2/pokemon?limit=1500&offset=0`;
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=386&offset=0`;
     const response = await fetch(url);
     const data = await response.json();
     arrPokemons = data.results;
